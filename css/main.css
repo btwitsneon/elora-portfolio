@@ -153,9 +153,10 @@ section.intro .intro_inner {
 section.intro .cover {
     height: 100%;
     width: 50%;
+    background-color: #6B6860;
 }
 .second section.intro .cover {
-    background-color: #6B6860;
+    background-color: transparent;
 }
 section.intro .cover .cover_img {
     height: 90%;
@@ -171,15 +172,14 @@ section.intro .cover .cover_img .img_ {
 }
 section.intro .cover .cover_img .cover_text {
     position: absolute;
-    top: 30%;
+    top: 20%;
     mix-blend-mode: difference;
     transform: translateX(-50%);
     color: #DCD8BA;
     font-weight: 700;
 }
 .second section.intro .cover .cover_img .cover_text {
-    top: 20%;
-    mix-blend-mode: normal;
+    mix-blend-mode: difference;
 }
 section.intro .cover .tiny_info {
     position: absolute;
