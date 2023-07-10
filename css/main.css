@@ -154,7 +154,9 @@ section.intro .cover {
     height: 100%;
     width: 50%;
 }
-
+.second section.intro .cover {
+    background-color: #6B6860;
+}
 section.intro .cover .cover_img {
     height: 60%;
     min-height: 38.75rem;
@@ -175,6 +177,10 @@ section.intro .cover .cover_img .cover_text {
     transform: translateX(-50%);
     color: #DCD8BA;
     font-weight: 700;
+}
+.second section.intro .cover .cover_img .cover_text {
+    top: 20%;
+    mix-blend-mode: normal;
 }
 section.intro .cover .tiny_info {
     position: absolute;
@@ -219,5 +225,4 @@ section.intro .collaboration {
     height: 10%;
     font-weight: 600;
     font-size: 1rem;
-    border-left: 1px solid #1F1B18;
 }
