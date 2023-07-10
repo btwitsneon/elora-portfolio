@@ -64,7 +64,7 @@ figure {
 
 /* Responsive Styles */
 .container {
-    padding: 0 40px;
+    padding: 0 80px;
 }
 
 .lora_ {
@@ -118,12 +118,17 @@ figure {
     word-wrap: break-word;
     margin-bottom: 5rem;
 }
+.cover_img {
+    transform: rotate(-2deg);
+    margin: 0 auto;
+}
 /* Header */
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
     padding: clamp(14px,2vw,28px) 0;
     font-size: 1rem;
     color: #f5f5f5;
@@ -172,6 +177,7 @@ section.intro .cover .cover_img {
     max-height: 38.75rem;
     max-width: 26.5rem;
     margin: 0 auto;
+    transform: rotate(0deg);
 }
 
 section.intro .cover .cover_img .img_ {
@@ -281,5 +287,81 @@ section.about .cover .cover_img {
     margin: 0 auto;
     max-width: 25.125rem;
     max-height: 37.75rem;
-    transform: rotate(-2deg);
+}
+
+section.experience .cover {
+    width: 50%;
+}
+section.experience .cover .cover_img {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 28rem;
+    max-height: 43rem;
+}
+
+section.experience .timeline {
+    width: 50%;
+}
+section.experience .timeline .exp {
+    position: relative;
+}
+
+section.experience .timeline .exp::before {
+    content: '';
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 2px;
+    background-image: linear-gradient(to bottom,#222 0 15%,#fff0 10%);
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 1.5px 12px;
+}
+
+section.experience .timeline .exp .date {
+    display: inline-block;
+    background-color: #BBB6A5;
+    padding: .8rem 2rem;
+    font-weight: 600;
+    font-size: .85rem;
+}
+section.experience .timeline .exp .date.current {
+    background-color: #1F1B18;
+    color: #f5f5f5;
+}
+section.experience .timeline .exp .exp_details {
+    padding: 2rem 0 3rem 8rem;
+    font-size: .9rem;
+}
+section.experience .timeline .exp .exp_details h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+section.experience .timeline .exp .exp_details p {
+    font-weight: 400;
+}
+section.experience .collaboration {
+    margin-top: 4rem;
+}
+section.experience .collaboration .companies {
+    gap: 50px;
+    color: #875936;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 25px;
+    animation: marquee 5s linear infinite;
+}
+section.experience .collaboration:hover .companies {
+    animation-play-state: paused;
+}
+/* animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translate(-100%);
+    }
 }
