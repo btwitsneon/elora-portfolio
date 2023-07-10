@@ -23,7 +23,7 @@ html *::-webkit-selection {
 }
 
 html *::-moz-selection {
-    background: #fdedef;
+    background: #edf9fd;
     color: #1F1B18
 }
 
@@ -383,6 +383,9 @@ footer .title {
 footer .cover {
     width: 80%;
     max-height: 8rem;
+}
+footer .email {
+    transform-origin: left;
 }
 footer .credits {
     padding: 10rem 0 1rem 0;
