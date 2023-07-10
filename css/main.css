@@ -158,7 +158,8 @@ section.intro .cover {
 section.intro .cover .cover_img {
     height: 60%;
     min-height: 38.75rem;
-    max-width: 25.5rem;
+    min-width: 25.5rem;
+    max-width: 26.5rem;
     margin: 0 auto;
 }
 
