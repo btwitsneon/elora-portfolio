@@ -53,6 +53,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 img,
 svg,
 video,
@@ -355,6 +363,30 @@ section.experience .collaboration .companies {
 }
 section.experience .collaboration:hover .companies {
     animation-play-state: paused;
+}
+
+
+footer {
+    padding: clamp(14px,2vw,28px) 0;
+    font-weight: 600;
+}
+footer .details {
+    height: 8rem;
+}
+footer .details .info,
+footer .details .cover {
+    height: 100%;
+}
+footer .title {
+    margin-bottom: 0;
+}
+footer .cover {
+    width: 80%;
+    max-height: 8rem;
+}
+footer .credits {
+    padding: 10rem 0 1rem 0;
+    font-size: .9rem;
 }
 /* animation */
 @keyframes marquee {
