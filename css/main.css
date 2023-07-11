@@ -351,6 +351,8 @@ section.experience .timeline .exp .exp_details p {
     font-weight: 400;
 }
 section.experience .collaboration {
+    max-width: 100%;
+    overflow-x: hidden;
     margin-top: 4rem;
 }
 section.experience .collaboration .companies {
